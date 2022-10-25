@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 11px;
+    height: 20px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    /* border-radius: 100vh; */
+    background: transparent;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #cccc;
+    border-radius: 100vh;
+  
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #f97316;
+  }
+}
+
+
+.label-card {
+  @apply flex my-4 bg-gray-800 rounded-md p-2 border-2 border-transparent focus-within:border-cyan-900 transition-all;
+}
+
+.input-card {
+  @apply rounded-sm border-none outline-none bg-transparent sm:w-full autofill:bg-transparent;
+}
